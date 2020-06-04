@@ -1,0 +1,72 @@
+header {
+    background-color: rgb(6, 178, 247);
+    /*esto es para organizar a los elementos del header (a ref logo y a nav)
+    esto es para posicionar en el medio de arriba a abajo a los elementos nav*/
+    display: flex;
+    /*esto es para dar 1 espacio entre los elemntos a href logo y nav)
+    Por eso lo mando a los nav al final*/
+    justify-content: space-between;
+    /*esto centra al a href logo de arriba hacia abajo*/
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    /*margin son los espaciados por fuera de la cajita*/
+    margin-left: 20px ;
+}
+a {
+    color: white;
+}
+
+main {
+    background: blueviolet;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+/*el ancho de la imagen ocupará el 100% de la caja que lo contiene*/ 
+img {
+    width: 100%;
+}
+
+footer {
+    background: green;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 32px;
+    /*para quitarle el underline a "logo"*/
+    text-decoration: none;
+}
+
+/*usaremos un pseudoclase HOVER
+esto quiere decir que el estado del elemento será hover cuando el puntero lo señale*/
+.logo:hover {
+    color: red;
+    text-decoration: underline;
+}
